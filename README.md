@@ -36,6 +36,14 @@ kValue = 2
 
 x = [YOUR X-VALUES HERE]
 y = [YOUR Y-VALUES HERE]
+
+# -----------------------------------------------------------------------
+
+''' USER - enter plot title, X-axis label, and Y-axis label '''
+
+title = fitType + " Relationship Between Voltage and Salinity"
+userXLabel = 'Salinity (TSP/mL)'
+userYLabel = 'Voltage (V)'
 ```
 
 Then,
