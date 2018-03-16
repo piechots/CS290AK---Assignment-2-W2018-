@@ -44,6 +44,14 @@ y = [2.19, 2.27, 2.37, 2.45, 2.48, 2.52, 2.55, 2.58, 2.60, 2.63, 2.65, 2.66,
      2.66]
 
 # -----------------------------------------------------------------------
+
+''' USER - enter plot title, X-axis label, and Y-axis label '''
+
+title = fitType + " Relationship Between Voltage and Salinity"
+userXLabel = 'Salinity (TSP/mL)'
+userYLabel = 'Voltage (V)'
+
+# -----------------------------------------------------------------------
 ''' R^2 FUNCTIONS'''
 
 # listSum
@@ -693,15 +701,14 @@ def plot(fitTypeInput):
     ax.scatter(x, y, c='r', label='data')
 
     # graph title
-    title = fitTypeInput + " Relationship Between Voltage and Salinity"
     plt.title(title)
     plt.legend()
 
     # x-axis label (with units)
-    plt.xlabel('Salinity (TSP/mL)')
+    plt.xlabel(userXLabel)
 
     # y-axis label (with units)
-    plt.ylabel('Voltage (V)')
+    plt.ylabel(userYLabel)
 
     # render the graph
     plt.show(f)
